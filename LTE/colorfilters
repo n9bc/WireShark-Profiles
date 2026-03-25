@@ -1,4 +1,8 @@
 # This file was created by Wireshark. Edit with care.
+@GTPV2/Handover@gtpv2 && gtpv2.hi == true@[43690,43690,65535][0,0,0]
+@GTPV2/CC16@gtpv2 && gtpv2.cause == 16@[41120,65535,41120][0,0,0]
+@GTPV2/Warning@gtpv2 && (gtpv2.cause >= 4 && gtpv2.cause < 17)@[65535,46003,0][0,0,0]
+@GTPV2/Error@gtpv2 && (gtpv2.cause >= 17)@[65535,49344,49344][0,0,0]
 @Diameter/Success-2001@s1ap.S1AP_PDU == 1@[41120,65535,41120][0,0,0]
 @Diameter/Test@diameter.Subscription-Id-Data == "311480970103082"@[64764,59881,20303][0,0,0]
 @Diameter/MultiAuth-1001@diameter && (diameter.Result-Code==1001)@[65535,65535,49344][0,0,0]
